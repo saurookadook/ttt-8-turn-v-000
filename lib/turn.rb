@@ -39,7 +39,7 @@ def turn(board)
     move(board, input_to_index(user_input), char = "X")
     display_board(board)
   else
-    until valid_move?(board, input_to_index(user_input)) == true && position_taken?(board, input_to_index(user_input)) == false
+    until valid_move?(board, input_to_index(user_input)) == true
       puts "Invalid move"
       turn(board)
     end
